@@ -1,0 +1,7 @@
+String    E3DC_ModbusId                 "E3DC Modbus ID"            (e3dc)      { channel="modbus:e3dc:device:powerplant:info#modbus-id" }
+
+Number:Power    E3DC_PVPower                  "E3DC PV Power"              (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#pv-power-supply" }
+Number:Power    E3DC_BatteryDischarge         "E3DC Battery Discharge"     (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#battery-power-supply" }
+Number:Power    E3DC_BatteryCharge            "E3DC Battery Charge"        (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#battery-power-consumption" }
+Number:Power    E3DC_Household                "E3DC Household Consumption" (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#household-power-consumption" }
+Number:Power    E3DC_GridConsumption          "E3DC Power to Grid"         (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#grid-power-consumption" }
