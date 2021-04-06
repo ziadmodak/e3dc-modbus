@@ -1,0 +1,16 @@
+sitemap E3DC label="E3DC Binding Sitemap" {
+  Frame label="Info" {
+    Text    item=E3DC_ModbusId                  label="Modbus-ID [%s]"
+  }
+  
+    Frame label="Power Producer" {
+      Text    item=E3DC_PVPower                 label="PV Power [%d %unit%]"
+      Text    item=E3DC_BatteryDischarge        label="Battery Discharge [%d %unit%]"
+    }
+    Frame label="Power Consumer" {
+      Text    item=E3DC_Household               label="Household [%d %unit%]"
+      Text    item=E3DC_BatteryCharge           label="Battery Charge [%d %unit%]"
+      Text    item=E3DC_GridConsumption         label="Power to Grid [%d %unit%]"
+    }
+  
+}
