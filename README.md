@@ -1,8 +1,8 @@
-# E3DC Power Station to openHAB 
+# E3DC Power Station to openHAB
 
-This repository contains openHAB configuration files for extracting data from the E3DC Power Station and then store the data on the Pi. 
+This repository contains openHAB configuration files for extracting data from the E3DC Power Station and then store the data on the Pi.
 
-# Backlog
+## Backlog
 
 - Add all the other KPIs
 - Persistence on the Synology NAS
