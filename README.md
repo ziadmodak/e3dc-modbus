@@ -14,3 +14,4 @@ This repository contains openHAB configuration files for extracting data from th
 - [x] Persistence on the Synology NAS
   - [x] Setup MariaDB on the NAS
   - [x] Setup JDBC drivers on the Pi
+- [x] Persistence every minute for testing
