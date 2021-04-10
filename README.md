@@ -5,8 +5,12 @@ This repository contains openHAB configuration files for extracting data from th
 ## Backlog
 
 - Add all the other KPIs
-- Persistence on the Synology NAS
-  - Setup MariaDB on the NAS
-  - Setup JDBC drivers on the Pi
+- Let Pi and DB run for a week and test the persistence
 - Install Grafana (or some other visualisation tool) on the Pi
   - Set it up to talk to the data stored in the NAS
+
+## Done
+
+- [x] Persistence on the Synology NAS
+  - [x] Setup MariaDB on the NAS
+  - [x] Setup JDBC drivers on the Pi
