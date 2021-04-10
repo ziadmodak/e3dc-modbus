@@ -7,5 +7,5 @@ Strategies {
 
 Items {
     // persist items on every change and every minute - used for E3DC
-    persist : strategy = everyChange, everyMinute
+    persist : strategy = everyMinute
 }
