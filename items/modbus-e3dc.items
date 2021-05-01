@@ -1,7 +1,16 @@
-String    E3DC_ModbusId                 "E3DC Modbus ID"            (e3dc)      { channel="modbus:e3dc:device:powerplant:info#modbus-id" }
+String    ModbusId                 "Modbus ID"            (e3dc)               { channel="modbus:e3dc:device:powerplant:info#modbus-id" }
+String    Firmware_Release              "Firmware Release"     (e3dc,persist)       { channel="modbus:e3dc:device:powerplant:info#firmware-release" }
 
-Number:Power    E3DC_PVPower                  "E3DC PV Power"              (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#pv-power-supply" }
-Number:Power    E3DC_BatteryDischarge         "E3DC Battery Discharge"     (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#battery-power-supply" }
-Number:Power    E3DC_BatteryCharge            "E3DC Battery Charge"        (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#battery-power-consumption" }
-Number:Power    E3DC_Household                "E3DC Household Consumption" (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#household-power-consumption" }
-Number:Power    E3DC_GridConsumption          "E3DC Power to Grid"         (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#grid-power-consumption" }
+Number:Power    PVPower                  "PV Power"              (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#pv-power-supply" }
+Number:Power    BatteryDischarge         "Battery Discharge"     (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#battery-power-supply" }
+Number:Power    BatteryCharge            "Battery Charge"        (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#battery-power-consumption" }
+Number:Power    Household                "Household Consumption" (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#household-power-consumption" }
+Number:Power    GridConsumption          "Power to Grid"         (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#grid-power-consumption" }
+Number:Power    GridPowerSupply          "Power from Grid"       (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:power#grid-power-supply" }
+
+Number:Dimensionless    Autarky         "Autarky"           (e3dc,persist)      { channel="modbus:e3dc:device:powerplant:power#autarky-channel" }
+Number:Dimensionless    BatterySOC      "Battery SOC"       (e3dc,persist)      { channel="modbus:e3dc:device:powerplant:power#battery-soc" }
+Number:Dimensionless    SelfConsumption "Self Consumption"  (e3dc,persist)      { channel="modbus:e3dc:device:powerplant:power#self-consumption" }
+
+Number:Power        GardenPower       "Garden Watt"    (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:strings#string1-dc-output" }
+Number:Power        StreetPower       "Street Watt"    (e3dc,persist)  { channel="modbus:e3dc:device:powerplant:strings#string2-dc-output" }
